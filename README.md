@@ -28,114 +28,118 @@ This repository contains a comprehensive pipeline for generating TikTok videos f
    ```sh
    git clone <repository_url>
    cd <repository_name>
-Create and activate a Conda environment:
+   ```
 
-sh
-Copiar código
-conda create --name auto_video_maker python=3.10 -y
-conda activate auto_video_maker
-Navigate to the repository directory:
+2. **Create and activate a Conda environment**:
+   ```sh
+   conda create --name auto_video_maker python=3.10 -y
+   conda activate auto_video_maker
+   ```
 
-sh
-Copiar código
-cd path/to/repo
-Install the required packages:
+3. **Navigate to the repository directory**:
+   ```sh
+   cd path/to/repo
+   ```
 
-sh
-Copiar código
-pip install -r requirements.txt
-Install ffmpeg and ImageMagick:
+4. **Install the required packages**:
+   ```sh
+   pip install -r requirements.txt
+   ```
 
-Follow the instructions for your operating system:
+5. **Install ffmpeg and ImageMagick**:
 
-Windows:
+   Follow the instructions for your operating system:
 
-Download the latest ffmpeg release from the ffmpeg website.
-Extract the files and add the bin folder to your system's PATH.
-Download the latest ImageMagick release from the ImageMagick website.
-Run the installer and ensure you check the option to add ImageMagick to your system's PATH.
-macOS:
+   - **Windows**:
+     - Download the latest ffmpeg release from the ffmpeg website.
+     - Extract the files and add the `bin` folder to your system's PATH.
+     - Download the latest ImageMagick release from the ImageMagick website.
+     - Run the installer and ensure you check the option to add ImageMagick to your system's PATH.
 
-sh
-Copiar código
-brew install ffmpeg
-brew install imagemagick
-Linux:
+   - **macOS**:
+     ```sh
+     brew install ffmpeg
+     brew install imagemagick
+     ```
 
-sh
-Copiar código
-sudo apt update
-sudo apt install ffmpeg imagemagick
-Set up API keys:
+   - **Linux**:
+     ```sh
+     sudo apt update
+     sudo apt install ffmpeg imagemagick
+     ```
 
-Place your OpenAI API key in a file located at 'openai_key.txt'.
-Place your Leonardo API key in a file located at 'leonardo_key.txt'.
-Place your ElevenLabs API key in a file located at 'elevenlabs_key.txt'.
-🛠️ Running the Project
+6. **Set up API keys**:
+   - Place your OpenAI API key in a file located at `openai_key.txt`.
+   - Place your Leonardo API key in a file located at `leonardo_key.txt`.
+   - Place your ElevenLabs API key in a file located at `elevenlabs_key.txt`.
 
-Using the Streamlit App
-Activate the Conda environment and navigate to the repository directory:
+## 🛠️ Running the Project
 
-sh
-Copiar código
-conda activate auto_video_maker
-cd path/to/repo
-Launch the Streamlit App:
+### Using the Streamlit App
 
-sh
-Copiar código
-streamlit run streamlit_app.py
-Enter Video Details:
+1. **Activate the Conda environment and navigate to the repository directory**:
+   ```sh
+   conda activate auto_video_maker
+   cd path/to/repo
+   ```
 
-Title: Enter the title of the video.
-Topic: Specify the topic of the video.
-Description: Provide a detailed description of the video content.
-Specify Paths and Models:
+2. **Launch the Streamlit App**:
+   ```sh
+   streamlit run streamlit_app.py
+   ```
 
-Base Path: Directory where project data will be stored.
-Prompt Path: Path to the prompt template file.
-Image Generation Service: Choose between 'openai' or 'leonardo'.
-Audio Generation Service: Choose between 'openai' or 'elevenlabs'.
-Optional Settings:
+3. **Enter Video Details**:
+   - **Title**: Enter the title of the video.
+   - **Topic**: Specify the topic of the video.
+   - **Description**: Provide a detailed description of the video content.
 
-Add Background Music: Place an .mp3 file in the music folder if you want to use this function.
-Add Subtitles: Option to add subtitles to the video.
-Generate Video:
+4. **Specify Paths and Models**:
+   - **Base Path**: Directory where project data will be stored.
+   - **Prompt Path**: Path to the prompt template file.
+   - **Image Generation Service**: Choose between `openai` or `leonardo`.
+   - **Audio Generation Service**: Choose between `openai` or `elevenlabs`.
 
-Click on "Generate Video" to start the pipeline.
-Monitor the process output and errors in the Streamlit interface.
-Once the video is generated, it will be displayed within the app.
-📜 Pipeline Description
+5. **Optional Settings**:
+   - **Add Background Music**: Place an `.mp3` file in the music folder if you want to use this function.
+   - **Add Subtitles**: Option to add subtitles to the video.
 
-Step-by-Step Process
-Creating Project Structure:
+6. **Generate Video**:
+   - Click on "Generate Video" to start the pipeline.
+   - Monitor the process output and errors in the Streamlit interface.
+   - Once the video is generated, it will be displayed within the app.
 
-Sets up necessary directories for storing data, images, audio, JSON files, transcriptions, and videos.
-Generating JSON from Input:
+## 📜 Pipeline Description
 
-Reads user inputs and uses the prompt template to generate a detailed JSON script for the video.
-Generating and Saving Images:
+### Step-by-Step Process
 
-Uses the selected image generation service (OpenAI or Leonardo) to create images based on prompts in the JSON script.
-Generating and Saving Audio:
+1. **Creating Project Structure**:
+   - Sets up necessary directories for storing data, images, audio, JSON files, transcriptions, and videos.
 
-Uses the selected audio generation service (OpenAI or ElevenLabs) to create audio narration for the script.
-Generating and Saving Transcription:
+2. **Generating JSON from Input**:
+   - Reads user inputs and uses the prompt template to generate a detailed JSON script for the video.
 
-Transcribes the generated audio to create a detailed text transcription.
-Updating and Saving Scene Times:
+3. **Generating and Saving Images**:
+   - Uses the selected image generation service (OpenAI or Leonardo) to create images based on prompts in the JSON script.
 
-Analyzes audio duration and updates scene times in the JSON script to sync with the generated images and audio.
-Compiling and Saving Video:
+4. **Generating and Saving Audio**:
+   - Uses the selected audio generation service (OpenAI or ElevenLabs) to create audio narration for the script.
 
-Combines images, audio, and scene times to create a cohesive video.
-Optionally adds background music and subtitles if specified.
-Adding Subtitles:
+5. **Generating and Saving Transcription**:
+   - Transcribes the generated audio to create a detailed text transcription.
 
-Creates and adds animated subtitles to the video based on the transcription data.
-Adding Background Music:
+6. **Updating and Saving Scene Times**:
+   - Analyzes audio duration and updates scene times in the JSON script to sync with the generated images and audio.
 
-Integrates background music into the video, adjusting volume levels to ensure clarity of the narration.
-📄 License
+7. **Compiling and Saving Video**:
+   - Combines images, audio, and scene times to create a cohesive video.
+   - Optionally adds background music and subtitles if specified.
+
+8. **Adding Subtitles**:
+   - Creates and adds animated subtitles to the video based on the transcription data.
+
+9. **Adding Background Music**:
+   - Integrates background music into the video, adjusting volume levels to ensure clarity of the narration.
+
+## 📄 License
 
 This project is licensed under the GNU General Public License v3.0. See the LICENSE file for more details.
