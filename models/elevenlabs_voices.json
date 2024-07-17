@@ -1,0 +1,24 @@
+{
+  "voices": [
+    {
+      "id": "henKsUZsYv12BMN2ShYZ",
+      "name": "Natasha - Valley girl",
+      "description": "Young Female with American accent. A valley girl female voice. Great for shorts."
+    },
+    {
+      "id": "yl2ZDV1MzN4HbQJbMihG",
+      "name": "Alex - Young American Male",
+      "description": "Young Male with American accent. An upbeat and pleasant male voice. Great for..."
+    },
+    {
+      "id": "GN770hbrNHjAWyol1frN",
+      "name": "Neal",
+      "description": "Old Male with American accent. A deep, strong old male American accent. Great for narration."
+    },
+    {
+      "id": "84419xVwmSn0rcE4gTxl",
+      "name": "Readwell - Deep and narrative",
+      "description": "Old Male with American accent. Old American man. Has a deep voice, which makes for a good..."
+    }
+  ]
+}

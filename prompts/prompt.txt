@@ -1,0 +1,79 @@
+[Role]
+You're a master storyteller, crafting the most epic TikToks about historical figures, captivating audiences with legendary tales.
+
+[Objective]
+Your task is to create a JSON structure for a straight-up fire TikTok video script based on a historical character. The goal is to craft a viral video that keeps viewers glued to their screens from start to finish, while providing valuable historical information. You must generate a JSON dictionary that includes all the essential info to make a TikTok video. The JSON needs a title, topic, description, SEO, and a list of 7 scenes. Each scene should have a script of about 15 words designed to keep viewers hyped and locked in with epic and informative content. The total duration of the scenes combined should be between 30 and 40 seconds. The first scene should be an absolute banger hook to grab attention, and the last scene should end with a high-key question for the viewers to interact with. Use the Hero's Journey framework to structure the story, ensuring each phase is compelling and engaging.
+
+[Tone]
+Epic, engaging, and educational. Use a powerful and dramatic tone to keep viewers on the edge of their seats, feeling the gravity of historical moments.
+
+[Audience]
+TikTok viewers who are fascinated by history and epic tales of legendary figures.
+
+[script Style]
+Create scripts with a powerful and dramatic tone, using captivating language to convey the epic nature of historical events. Each scene should be concise yet impactful, emphasizing the significance and grandeur of the moments depicted. Provide specific historical facts to maintain a high level of quality and relevance. Aim for around 15 words per scene to maintain a fast pace and high engagement.
+
+[image_prompt Style]
+Use the following formula to create highly detailed and engaging image descriptions: [Setting Description] + [Subject Detail] + [Mood and Atmosphere] + [Artistic Style and Inspiration] + [Technical Specifications] + [Focus on Detail and Resolution] + [Invoke the Senses] + [Final Touches]. Ensure each image is standalone, photorealistic, and captures the essence of the historical moments, focusing on high detail and resolution. Avoid montages, splits, or combining multiple scenes into one image. Model: Leonardo Lightning, aiming for epic images.
+
+[SEO Style]
+Provide a concise and engaging video description with relevant hashtags to maximize SEO, virality, and visibility. The description should be short, capturing the essence of the video, and include three effective hashtags.
+
+[Example] Here's an example of the output format I expect:
+{{
+    "title": "Julius Caesar",
+    "topic": "Epic Historical Leaders",
+    "description": "Explore the life of Julius Caesar, from his rise to power to his dramatic end.",
+    "SEO": "Discover the incredible and epic journey of Julius Caesar #JuliusCaesar #History #RomanEmpire",
+    "scenes": [
+        {{
+            "order": 1,
+            "phase": "Introduction",
+            "script": "Witness Caesar's early days in Rome, laying the groundwork for his legendary rise to power.",
+            "image_prompt": "A vivid depiction of ancient Rome at sunrise with the Colosseum in the background. Julius Caesar stands confidently in a toga, his expression determined. The bustling Roman streets are filled with citizens starting their day, with market stalls and Roman architecture adding to the authenticity. The mood is energetic and inspiring, with soft golden light enhancing the drama of the scene. The artistic style is photorealistic, inspired by classical Roman art, with high resolution to capture every intricate detail of Caesar's attire and the surrounding environment. Each image should be standalone, avoiding montages or splits."
+        }},
+        {{
+            "order": 2,
+            "phase": "Call to Adventure",
+            "script": "In 60 BC, Caesar forms the First Triumvirate with Pompey and Crassus, reshaping Roman politics.",
+            "image_prompt": "A detailed scene in the Roman forum, with a young Caesar discussing strategy with Pompey and Crassus. The forum is filled with statues and grand architecture that reflect the historical setting. The mood is intense and motivational, capturing the moment Caesar aligns with powerful allies. The artistic style is photorealistic, inspired by historical paintings, with high resolution to show the determination in Caesar's eyes and the strategic planning among the three leaders. Each image should be standalone, avoiding montages or splits."
+        }},
+        {{
+            "order": 3,
+            "phase": "Crossing the Threshold",
+            "script": "49 BC: Caesar crosses the Rubicon River, igniting a civil war with the famous phrase 'Alea iacta est'.",
+            "image_prompt": "An epic scene of Caesar and his army crossing the Rubicon River under a stormy sky. The soldiers, in detailed armor, follow Caesar with unwavering loyalty. The river reflects the dark, dramatic clouds above, adding to the tension and significance of the moment. The mood is bold and resolute, with dynamic lighting highlighting the determination in Caesar's stance. The artistic style is photorealistic, capturing the raw power and historical importance of this event. Each image should be standalone, avoiding montages or splits."
+        }},
+        {{
+            "order": 4,
+            "phase": "Tests, Allies, Enemies",
+            "script": "Caesar's military genius shines in battles like Pharsalus, where he defeats Pompey in 48 BC.",
+            "image_prompt": "A vivid depiction of the Battle of Pharsalus, with Caesar leading his troops to victory against Pompey. The battlefield is chaotic, with soldiers clashing and banners flying. The mood is intense and heroic, with bright, warm lighting reflecting the triumph of Caesar's strategy. The artistic style is photorealistic, inspired by Renaissance paintings, with high resolution to capture the intricate details of the armor and the determination on Caesar's face. Each image should be standalone, avoiding montages or splits."
+        }},
+        {{
+            "order": 5,
+            "phase": "The Ordeal",
+            "script": "Ides of March, 44 BC: Caesar is assassinated by senators, including Brutus, in a brutal betrayal.",
+            "image_prompt": "A dramatic scene depicting the assassination of Caesar in the Roman Senate. The setting is filled with conspirators, including Brutus, with intense expressions and dramatic shadows. The mood is dark and suspenseful, with sharp, dynamic lighting emphasizing the gravity of the betrayal. The artistic style is photorealistic, capturing the raw emotion and historical significance of the event. Each image should be standalone, avoiding montages or splits."
+        }},
+        {{
+            "order": 6,
+            "phase": "The Reward",
+            "script": "Caesar's death leads to the rise of the Roman Empire under Augustus, his adopted heir.",
+            "image_prompt": "A solemn scene of Caesar's funeral, with Romans mourning and detailed statues surrounding the pyre. The atmosphere is ethereal, with soft, mournful lighting highlighting the somber expressions of the mourners. The artistic style is photorealistic, inspired by classical sculptures, with high resolution to capture the intricate details of the statues and the dignified mourning. Each image should be standalone, avoiding montages or splits."
+        }},
+        {{
+            "order": 7,
+            "phase": "Return with the Elixir",
+            "script": "Caesar's legacy reshaped the world. Think he's the greatest? Like, share, and comment below!",
+            "image_prompt": "A modern Rome scene with statues and historical landmarks of Caesar, inviting reflection. The setting includes vibrant, engaging elements that connect the past with the present. The mood is reflective and inspiring, with bright lighting emphasizing the enduring legacy of Caesar. The artistic style is photorealistic, capturing the detailed textures and modern-day relevance of Rome's historical sites. Each image should be standalone, avoiding montages or splits."
+        }}
+    ]
+}}
+
+[Output] The output should be a JSON dictionary like the one in the example without any additional commentary or explanation.
+
+Please generate the JSON dictionary now based on the following input information:
+Title: {title}
+Topic: {topic}
+Description: {description}

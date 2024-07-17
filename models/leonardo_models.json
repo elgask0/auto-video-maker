@@ -1,0 +1,105 @@
+{
+    "custom_models": [
+      {
+        "id": "6b645e3a-d64f-4341-a6d8-7a3690fbf042",
+        "name": "Leonardo Phoenix",
+        "description": "Leonardo's proprietary model, known for exceptional prompt adherence."
+      },
+      {
+        "id": "e71a1c2f-4f80-4800-934f-2c68979d8cc8",
+        "name": "Leonardo Anime XL",
+        "description": "Anime-focused model, excels at CG styles and high-speed generation."
+      },
+      {
+        "id": "b24e16ff-06e3-43eb-8d33-4416c2d75876",
+        "name": "Leonardo Lightning XL",
+        "description": "High-speed generalist model, excellent for photorealism and painterly styles."
+      },
+      {
+        "id": "aa77f04e-3eec-4034-9c07-d0f619684628",
+        "name": "Leonardo Kino XL",
+        "description": "Cinematic outputs, excels at wider aspect ratios."
+      },
+      {
+        "id": "5c232a9e-9061-4777-980a-ddc8e65647c6",
+        "name": "Leonardo Vision XL",
+        "description": "Versatile in realism and photography, better results with longer prompts."
+      },
+      {
+        "id": "1e60896f-3c26-4296-8ecc-53e2afecc132",
+        "name": "Leonardo Diffusion XL",
+        "description": "Core Leonardo model, stunning outputs even with short prompts."
+      },
+      {
+        "id": "2067ae52-33fd-4a82-bb92-c2c55e7d2786",
+        "name": "AlbedoBase XL",
+        "description": "Generalist model, tends towards more artistic and CG outputs."
+      },
+      {
+        "id": "f1929ea3-b169-4c18-a16c-5d58b4292c69",
+        "name": "RPG v5",
+        "description": "Specialized in RPG characters of all kinds."
+      },
+      {
+        "id": "b63f7119-31dc-4540-969b-2a9df997e173",
+        "name": "SDXL 0.9",
+        "description": "Latest Stable Diffusion model, currently in Beta."
+      },
+      {
+        "id": "d69c8273-6b17-4a30-a13e-d6637ae1c644",
+        "name": "3D Animation Style",
+        "description": "Great for complex scenes with rich color."
+      },
+      {
+        "id": "ac614f96-1082-45bf-be9d-757f2d31c174",
+        "name": "DreamShaper v7",
+        "description": "Highly versatile, ideal for portraits and artistic backgrounds."
+      },
+      {
+        "id": "e316348f-7773-490e-adcd-46757c738eb7",
+        "name": "Absolute Reality v1.6",
+        "description": "Photorealistic model, great for all sorts of realism."
+      },
+      {
+        "id": "1aa0f478-51be-4efd-94e8-76bfc8f533af",
+        "name": "Anime Pastel Dream",
+        "description": "Pastel anime style, ideal for a wide range of anime styles."
+      },
+      {
+        "id": "b7aa9939-abed-4d4e-96c4-140b8c65dd92",
+        "name": "DreamShaper v6",
+        "description": "Versatile update, excels at both people and environments."
+      },
+      {
+        "id": "b820ea11-02bf-4652-97ae-9ac0cc00593d",
+        "name": "Leonardo Diffusion",
+        "description": "Excellent shading and contrast, great for photos and artistic styles."
+      },
+      {
+        "id": "a097c2df-8f0c-4029-ae0f-8fd349055e61",
+        "name": "RPG 4.0",
+        "description": "Best at creating RPG character portraits with great photorealism."
+      },
+      {
+        "id": "458ecfff-f76c-402c-8b85-f09f6fb198de",
+        "name": "Deliberate 1.1",
+        "description": "Powerful model for photorealism and artistic creations."
+      },
+      {
+        "id": "17e4edbf-690b-425d-a466-53c816f0de8a",
+        "name": "Vintage Style Photography",
+        "description": "Generates images with a vintage style as if taken with a film camera."
+      },
+      {
+        "id": "f3296a34-9aef-4370-ad18-88daf26862c3",
+        "name": "DreamShaper 3.2",
+        "description": "Great for a range of portrait styles and artistic backgrounds."
+      },
+      {
+        "id": "cd2b2a15-9760-4174-a5ff-4d2925057376",
+        "name": "Leonardo Select",
+        "description": "Powerful finetune of SD2.1, achieving a high level of realism."
+      }
+    ]
+  }
+  
